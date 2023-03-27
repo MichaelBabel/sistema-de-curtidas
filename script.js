@@ -26,13 +26,15 @@ heartIcon.forEach((icon) => {
             }
             likes.textContent = likesNumber;
         }
-    })
-})
+    });
+});
 
+window.addEventListener('load', function() {
+  // seleciona as barras de progresso
+  const progressBar1 = document.querySelector('.progress-bar-1');
+  const progressBar2 = document.querySelector('.progress-bar-2');
 
-// let likesNumber = Math.floor(Math.random()*158486);
-// console.log(likesNumber);
-
-// likes.addEventListener("click", () => {
-//     likesNumber += 1;
-// })
+  // adiciona uma classe para iniciar a animação
+  progressBar1.classList.add('animate');
+  progressBar2.classList.add('animate');
+});
