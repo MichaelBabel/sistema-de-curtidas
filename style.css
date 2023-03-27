@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #efefef;
+    font-family: 'Roboto', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+.profile {
+    width: 90%;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #2f2f2f;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.profile img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.profile .author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: #f1f1f1;
+}
+
+.info-author .name {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.info-author .info {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.profile .bars {
+    font-size: 2rem;
+}
+
+.profile .stats {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats .likes,
+.stats .followers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.likes .likes-info,
+.followers .followers-info {
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1150px;
+}
+
+.container h1 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #fff;
+    width: 350px;
+    padding: 10px;
+    border: 1px solid #dadada;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px 0px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+}
+
+.card .card-image {
+    position: relative;
+}
+
+.card .card-image img {
+    border-radius: 10px;
+}
+
+.card .card-icon .fa-regular {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.card .card-icon .fa-solid {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: #ff3636;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.card .card-tags {
+    display: flex;
+    margin: 15px 10px;
+}
+
+.card-tags .tag {
+    background-color: #4E31AA;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #fff;
+    border-radius: 15px;
+    padding: 6px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.card-tags .tag:hover {
+    background-color: #3A1078;
+}
+
+.card .title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #2f2f2f;
+    margin: 0 10px;
+}
+
+.card .description {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #5c5c5c;
+    line-height: 1.5;
+    margin: 15px 10px;
+}
+
+.read-more {
+    display: flex;
+    justify-content: center;
+}
+
+button.btn-read-more {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #f0f0f0;
+    background-color: #2F58CD;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    box-shadow: 5px 5px 10px -2px rgba(0, 0, 0, 0.1);
+}
